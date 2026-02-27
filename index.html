@@ -315,14 +315,43 @@ footer{background:var(--bg);border-top:1px solid var(--border);padding:32px 64px
   .crgt{padding:36px 20px}
 }
 @media(max-width:640px){
+  #nav{padding:12px 14px}
+  #nav.s{padding:10px 14px}
+  .nl{font-size:17px}
+  .nright{gap:8px}
+  .tbtn{width:36px;height:36px}
+  .ncta{padding:9px 10px;font-size:9px;letter-spacing:.06em}
+  #hero{padding:0 14px;min-height:auto}
+  .hm{padding-top:92px}
+  .hh{justify-content:center;gap:14px}
+  .ht{font-size:clamp(38px,14.5vw,58px);line-height:.92;letter-spacing:-1px;margin-bottom:16px}
   .hbadge{font-size:9px;letter-spacing:.1em;padding:7px 12px;margin-bottom:26px}
-  .hpic{width:172px;height:172px}
+  .hpic{width:162px;height:162px;margin:0 auto}
   .hpic::before{inset:-8px}
+  .hf{padding:20px 0;gap:18px}
+  .hfb,.hfb .hv{width:100%}
+  .hfb .hv{font-size:12px}
   .hacts{grid-template-columns:1fr}
   .fr{gap:14px;flex-wrap:wrap;justify-content:center}
   .skgrid,.cgrid{grid-template-columns:1fr}
   .ic{padding:16px}
   .crow{padding:15px 16px}
+}
+@media(max-width:480px){
+  .nl{font-size:16px}
+  .ncta{display:none}
+  #hero{padding:0 12px}
+  .sec{padding:64px 12px}
+  .ht{font-size:clamp(34px,15vw,52px)}
+  .hpic{width:148px;height:148px;padding:6px}
+  .hpic::before{inset:-6px;border-width:1.5px}
+  .bp,.bo{font-size:9px;padding:11px 8px}
+  .crgt,.cl{padding:28px 12px}
+  footer{padding:20px 12px}
+}
+@media (hover:none), (pointer:coarse){
+  body{cursor:auto}
+  #cur,#cring{display:none}
 }
 </style>
 </head>
