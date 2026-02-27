@@ -1,0 +1,23 @@
+{
+  "name": "kamran-portfolio",
+  "version": "1.0.0",
+  "description": "Modern CS Portfolio built with Express.js",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js",
+    "dev": "nodemon app.js"
+  },
+  "keywords": [
+    "portfolio",
+    "express",
+    "nodejs"
+  ],
+  "author": "Kamran Khan",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.18.2"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.1"
+  }
+}
