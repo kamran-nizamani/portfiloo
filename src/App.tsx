@@ -760,7 +760,7 @@ export default function App() {
                   boxShadow: '0 0 30px rgba(0, 242, 255, 0.3), inset 0 0 20px rgba(0, 242, 255, 0.1)'
                 }}>
                   <img
-                    src="/portfilo pic.jpeg"
+                    src="/portfilo-pic.jpeg"
                     alt="Kamran Khan"
                     className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
                   />
