@@ -45,6 +45,10 @@ import {
 } from 'lucide-react';
 import { GoogleGenAI } from "@google/genai";
 
+// Import static assets
+import profileImage from '../public/portfilo-pic.jpeg';
+import resumeDoc from '../public/Kamran_Khan_Resume.docx';
+
 // Import data constants
 import {
   PROFILE,
@@ -319,7 +323,7 @@ const ResumeModal = ({ isOpen, onClose }: { isOpen: boolean; onClose: () => void
               <div className="mt-10 flex flex-col gap-3 w-full">
                 {/* Download DOCX button */}
                 <a
-                  href="/Kamran_Khan_Resume.docx"
+                  href={resumeDoc}
                   download="Kamran_Khan_Resume.docx"
                   className="px-6 py-4 bg-brand text-bg font-black text-xs uppercase tracking-[0.2em] hover:brightness-110 transition-all shadow-[0_0_20px_rgba(0,242,255,0.2)] rounded-lg flex items-center justify-center gap-2 w-full"
                 >
@@ -721,9 +725,8 @@ export default function App() {
                 
                 {/* View Resume Button */}
                 <a
-                  href="/Kamran_Khan_Resume.docx"
-                  target="_blank"
-                  rel="noopener noreferrer"
+                  href={resumeDoc}
+                  download="Kamran_Khan_Resume.docx"
                   className="group relative px-6 py-3 md:px-8 md:py-4 bg-gradient-to-r from-brand/20 to-brand/10 border-2 border-brand/40 hover:border-brand/70 text-brand font-black text-xs md:text-sm uppercase tracking-[0.15em] rounded-lg transition-all duration-300 flex items-center gap-3 hover:shadow-[0_0_30px_rgba(0,242,255,0.4)] hover:scale-105"
                 >
                   <ExternalLink className="w-5 h-5" />
@@ -760,7 +763,7 @@ export default function App() {
                   boxShadow: '0 0 30px rgba(0, 242, 255, 0.3), inset 0 0 20px rgba(0, 242, 255, 0.1)'
                 }}>
                   <img
-                    src="/portfilo-pic.jpeg"
+                    src={profileImage}
                     alt="Kamran Khan"
                     className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
                   />

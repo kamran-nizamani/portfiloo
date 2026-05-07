@@ -8,6 +8,7 @@ export default defineConfig(({mode}) => {
   return {
     base: '/portfiloo/',
     plugins: [react(), tailwindcss()],
+    assetsInclude: ['**/*.docx'],
     define: {
       'process.env.GEMINI_API_KEY': JSON.stringify(env.GEMINI_API_KEY),
     },
